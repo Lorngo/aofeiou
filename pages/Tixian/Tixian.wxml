@@ -1,0 +1,64 @@
+<!--pages/Tixian/Tixian.wxml-->
+<!-- 选择提现路径 -->
+<view class="head">
+     <view class="left">提现到：</view>
+     <view class="right">
+        <view class="txt">默认微信钱包</view>
+        <view class="img">
+         <image src="../../static/images/wx.png"></image>
+        </view>
+     </view>
+</view>
+
+<!-- 申请金额修改 -->
+<view class="main">
+   <view class="top">
+     提现金额：
+   </view>
+
+   <view class="price">
+      <view class="left">
+       <view class="icon">￥</view>
+       <view class="pri">
+        <input placeholder="6800.00" placeholder-style="color:#d05748;font-size:60rpx"></input>
+       </view>
+      </view>
+      <view class="right">
+          <image src="../../static/images/tuichu.png"></image>
+      </view>
+   </view>
+
+   <view class="edu">
+       <view>可提现金额￥6320</view>
+       <view class="but">全部提现</view>
+   </view>
+
+   <view class="last">
+        提现手续费0.5元
+   </view>
+</view>
+
+<!-- 申请提现按钮 -->
+<view class="butt" bindtap="tixian">申请提现</view>
+
+
+<view wx:if='{{tag == true}}' class="zhezhao">
+   <view class="box">
+      <view class="img">
+       <image src="../../static/images/icon2.png" mode="widthFix"></image>
+      </view>
+
+      <view class="fanhui" bindtap="close">
+        <image src="../../static/images/tuichu.png" mode="widthFix"></image>
+      </view>
+
+      <view class="access">
+       提现成功
+      </view>
+
+      <view class="but" bindtap="close">
+      确定
+
+      </view>
+   </view>
+</view>

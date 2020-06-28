@@ -1,0 +1,61 @@
+/* pages/Lingqu/Lingqu.wxss */
+page {
+  background-color: white;
+}
+
+.head {
+  width: 750rpx;
+  height: 100rpx;
+  background: #f6f7f7;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 500;
+  text-align: left;
+  color: #010101;
+  padding-left: 30rpx;
+}
+
+.input {
+  display: flex;
+  padding-bottom: 30rpx;
+  width: 694rpx;
+  margin-left: 29rpx;
+  margin-top: 30rpx;
+  justify-content: space-between;
+  text-align: right;
+  font-size: 30rpx;
+font-family: PingFang SC, PingFang SC-Regular;
+font-weight: 400;
+border-bottom: 1rpx solid #f0f0f0;
+}
+
+.two{
+  border: none;
+}
+
+.input label{
+color: #666;
+}
+
+.input input{
+  color: black;
+}
+
+.input .icon{
+  font-size: 20rpx;
+  margin-left: 5rpx;
+  margin-top: -20rpx;
+}
+
+.button{
+  background: #383838;
+  color: white;
+  width: 594rpx ;
+  height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  border-radius: 15rpx;
+  margin-left: 78rpx;
+  margin-top: 78rpx;
+}

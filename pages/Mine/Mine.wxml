@@ -1,0 +1,229 @@
+<!--pages/Mine/Mine.wxml-->
+<!-- 顶部栏 -->
+<view class="head">
+	<view class="top">
+	<image class="beijing" src="../../static/images/beijing2.png"></image>
+		<view class="user">
+		   <view class="img">
+			  	<image src="../../static/images/user.png" mode='widthFix'></image>
+			 </view>
+			<view class="txt">
+				登录查看更多功能
+			</view>
+		</view>
+
+	</view>
+	<view class="card">
+		<view class="box">
+			<view class="img iconfont youhuiq.iconyouhuiq">
+
+			</view>
+			<view class="txt">我的优惠券</view>
+		</view>
+
+		<view class="box">
+			<view class="img iconfont shiyidingdan.iconshiyidingdan">
+
+			</view>
+			<view class="txt">试衣订单</view>
+		</view>
+
+		<view class="box">
+			<view class="img iconfont jifenshangcheng.iconjifenshangcheng">
+
+			</view>
+			<view class="txt">积分商城</view>
+		</view>
+	</view>
+</view>
+
+<!-- 我的订单 -->
+<view class="dindan">
+	<view class="top">
+		<view class="left">我的订单</view>
+		<view class="right">全部订单
+    <text class="iconfont .iconxiangyou"></text>
+    </view>
+	</view>
+	<view class="main">
+		<view class="box">
+			<view class="img iconfont daifukuan.icondaifukuan"></view>
+			<view class="txt">
+				待付款</view>
+		</view>
+		<view class="box">
+			<view class="img iconfont daifahuo.icondaifahuo"></view>
+			<view class="txt">
+				待发货</view>
+
+		</view>
+		<view class="box">
+			<view class="img iconfont daishouhuo.icondaishouhuo"></view>
+			<view class="txt">
+				待收货</view>
+		</view>
+		<view class="box">
+			<view class="img iconfont daipingjia.icondaipingjia"></view>
+			<view class="txt">
+				待评价</view>
+		</view>
+		<view class="box">
+			<view class="img iconfont tuikuan.icontuikuan"></view>
+			<view class="txt">
+				退款/售后</view>
+		</view>
+	</view>
+</view>
+
+<!-- 列表 -->
+<view class="list">
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont wodezhuanshudaogou.iconwodezhuanshudaogou"></view>
+			<view class="txt">我的专属导购</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont wodeshoucang.iconwodeshoucang"></view>
+			<view class="txt">我的收藏</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont dizhi.icondizhi"></view>
+			<view class="txt ">地址管理</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont yaoqinghaoyou.iconyaoqinghaoyou"></view>
+			<view class="txt">邀请好友</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont fenxiaoyuan.iconfenxiaoyuan"></view>
+			<view class="txt">申请成为分销员</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont chakanfenxiao.iconchakanfenxiao"></view>
+			<view class="txt">查看我的分销</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont zujin.iconzujin"></view>
+			<view class="txt">我的足迹</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+
+	<view class="box">
+		<view class="left">
+			<view class="img iconfont yijianfankui.iconyijianfankui"></view>
+			<view class="txt">意见反馈</view>
+		</view>
+		<view class="right iconfont .iconxiangyou"></view>
+	</view>
+</view>
+
+<!-- 猜你喜欢 -->
+<view class="footer">
+	<view class="head">
+		<view class="txt">
+			猜你喜欢
+		</view>
+		<view class="line">
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+		</view>
+	</view>
+
+	<view class="shop">
+		<view class="box">
+		 <view class="img">
+     	<image src="../../static/images/shop1.png" mode="widthFix"></image>
+     </view>
+			<view class="title">
+				方兜连袖短大衣
+			</view>
+			<view class="price">
+				<text class="icon">¥</text>
+				<text>139</text>
+			</view>
+		</view>
+
+    <view class="box">
+		  <view class="img">
+      	<image src="../../static/images/shop1.png" mode="widthFix"></image>
+      </view>
+			<view class="title">
+				茧型大翻领中长大衣
+			</view>
+			<view class="price">
+				<text class="icon">¥</text>
+				<text>189</text>
+			</view>
+		</view>
+
+    <view class="box">
+		  <view class="img">
+      	<image src="../../static/images/shop3.png" mode="widthFix"></image>
+      </view>
+			<view class="title">
+				方兜连袖短大衣
+			</view>
+			<view class="price">
+				<text class="icon">¥</text>
+				<text>139</text>
+			</view>
+		</view>
+
+    <view class="box">
+		  <view class="img">
+      	<image src="../../static/images/shop4.png" mode="widthFix"></image>
+      </view>
+			<view class="title">
+			茧型大翻领中长大衣
+			</view>
+			<view class="price">
+				<text class="icon">¥</text>
+				<text>189</text>
+			</view>
+		</view>
+	</view>
+
+
+
+
+</view>

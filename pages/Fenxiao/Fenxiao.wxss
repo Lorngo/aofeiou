@@ -1,0 +1,162 @@
+/* pages/Fenxiao/Fenxiao.wxss */
+page {
+  background-color: white;
+}
+
+.card {
+  width: 730rpx;
+  height: 531rpx;
+  margin-left: 10rpx;
+  position: relative;
+
+}
+
+.card .card1 {
+  width: 730rpx;
+  z-index: -1;
+  height: 531rpx;
+}
+
+.card .tixian {
+  width: 349rpx;
+  height: 94rpx;
+  position: absolute;
+  top: 470rpx;
+  left: 191rpx;
+  z-index: 2;
+}
+
+.card .shuju {
+  width: 646rpx;
+  height: 90rpx;
+  display: flex;
+  position: absolute;
+  top: 46rpx;
+  left: 40rpx;
+  align-items: center;
+
+}
+
+.card .shuju .left {
+  font-size: 28rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #4b4b4b;
+  margin-left: 26rpx;
+  padding-right: 20rpx;
+}
+
+.card .shuju .right {
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #5a5a5a;
+  padding-left: 15rpx;
+  border-left: 1px solid #ADADAD;
+}
+
+.card .cart {
+  width: 646rpx;
+  height: 340rpx;
+  position: absolute;
+  left: 42rpx;
+  top: 150rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card .cart .box {
+  width: 323rpx;
+  height: 170rpx;
+}
+
+.card .cart .box .top {
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #e6e6e6;
+}
+
+.card .cart .box view {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.card .cart .box  .change{
+  text-indent: 1rem;
+}
+
+.card .cart .box .main {
+  font-size: 42rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+.card .cart .line1 {
+  width: 620rpx;
+  height: 2rpx;
+  left: 10rpx;
+  background-color: #4B4B4B;
+  position: absolute;
+  top: 160rpx;
+}
+
+.card .cart .line2 {
+  top: 20rpx;
+  height: 280rpx;
+  width: 2rpx;
+  background-color: #4B4B4B;
+  position: absolute;
+  left: 324rpx;
+}
+
+.title {
+  width: 750rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  background-color: #F6F7F7;
+  margin-top: 48rpx;
+  text-indent: 2rem;
+  font-size: 30rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #383838;
+}
+
+.list {
+  width: 700rpx;
+  height: 40rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 30rpx;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #666666;
+  border-bottom: 1px solid #EFEFEF;
+}
+.list view{
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-indent: 1.3rem;
+}
+
+.list .name{
+  text-indent: 0.4rem;
+}
+
+.list text{
+  color: black;
+}

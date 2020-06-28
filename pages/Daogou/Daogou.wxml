@@ -1,0 +1,34 @@
+<!--pages/Daogou/Daogou.wxml-->
+<!-- 用户 -->
+<view class="head">
+    <view class="left">
+          <view class="img">
+              <image src="../../static/images/avatr6.png" mode="widthFix"></image>
+          </view>
+          <view class="name">
+             安徒生
+          </view>
+    </view>
+    <view class="right">
+           <image src="../../static/images/icon1.png"></image>
+    </view>
+</view>
+
+
+<!-- 地点详情 -->
+<view class="list">
+     <view class="box">
+        <view class="left">门店名称</view>
+        <view class="right">北京万达广场</view>
+     </view>
+
+     <view class="box">
+        <view class="left">门店电话</view>
+        <view class="right">135 2365 3586</view>
+     </view>
+
+     <view class="box">
+        <view class="left">门店地址</view>
+        <view class="right">湖南省长沙市开福区芙蓉路泊富写字楼</view>
+     </view>
+</view>

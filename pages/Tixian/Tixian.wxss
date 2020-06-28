@@ -1,0 +1,239 @@
+/* pages/Tixian/Tixian.wxss */
+.head {
+  width: 694rpx;
+  height: 112rpx;
+  margin-left: 28rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  border-radius: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head .left {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #333333;
+}
+
+.head .right {
+  margin-right: 30rpx;
+  display: flex;
+}
+
+.head .right .txt {
+  width: 156rpx;
+  height: 37rpx;
+  font-size: 26rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+  margin-right: 14rpx;
+}
+
+.head .right .img {
+  width: 32rpx;
+  height: 26rpx;
+  margin-top: -2rpx;
+
+}
+
+.head .right .img image {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 694rpx;
+  height: 318rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  margin-top: 30rpx;
+  margin-left: 28rpx;
+  padding-top: 30rpx;
+}
+
+.main .top {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #333333;
+}
+
+.main .price {
+  height: 70rpx;
+  width: 604rpx;
+  margin-left: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24rpx;
+  border-bottom: 1rpx solid #EFEFEF;
+}
+
+.main .price .left {
+  width: 570rpx;
+  display: flex;
+}
+
+.main .price .left .icon {
+  font-size: 36rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #333333;
+  margin-right: 16rpx;
+}
+
+.main .price .left .pri {
+
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #d05748;
+}
+
+.main .price .right {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.main .price .right image {
+  width: 100%;
+  height: 100%;
+}
+
+.main .price input {
+  height: 50rpx;
+}
+
+.main .edu {
+  height: 60rpx;
+  width: 604rpx;
+  margin-left: 30rpx;
+  display: flex;
+  margin-top: 24rpx;
+  border-bottom: 1rpx solid #EFEFEF;
+  font-size: 26rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+}
+
+.main .edu .but {
+  font-size: 26rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 30rpx;
+  color: #664c29;
+}
+
+.main .last {
+  height: 60rpx;
+  width: 604rpx;
+  margin-left: 30rpx;
+  margin-top: 24rpx;
+  font-size: 26rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  color: #664c29;
+}
+
+.butt {
+  width: 594rpx;
+  height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  background-color: #383838;
+  color: #FFFFFF;
+  margin-top: 80rpx;
+  margin-left: 78rpx;
+  border-radius: 15rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.zhezhao {
+  width: 750rpx;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  /* background: #191919;
+  opacity: 0.5; */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.zhezhao .box {
+  width: 609rpx;
+  height: 512rpx;
+  background-color: white;
+  margin-top: 351rpx;
+  margin-left: 71rpx;
+  border-radius: 15rpx;
+  position: relative;
+}
+
+.zhezhao .box .img {
+  width: 125rpx;
+  height: 151rpx;
+  top: 64rpx;
+  left: 242rpx;
+  position: absolute;
+}
+
+.zhezhao .box .img image {
+  width: 100%;
+  height: 100%;
+}
+
+.zhezhao .box .fanhui {
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  top: 26rpx;
+  left: 559rpx;
+}
+
+.zhezhao .box .fanhui image {
+  width: 100%;
+  height: 100%;
+}
+
+.zhezhao .box .access {
+  width: 144rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 261rpx;
+  left: 233rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #333333;
+}
+
+.zhezhao .box .but{
+   width: 403rpx;
+   height: 96rpx;
+   position: absolute;
+   top: 359rpx;
+   left: 103rpx;
+   background-color: #383838;
+   border-radius: 15rpx;
+   color: #FFFFFF;
+   text-align: center;
+   line-height: 96rpx;
+   font-size: 30rpx;
+font-family: PingFang SC, PingFang SC-Regular;
+font-weight: 400;
+}

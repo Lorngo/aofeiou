@@ -1,0 +1,24 @@
+<!--pages/Lingqu/Lingqu.wxml-->
+<!-- 头部注释 -->
+	<view class="head">
+		领取会员卡可同步获得的积分
+	</view>
+<!-- 会员信息 -->
+ <form>
+  <view class="input">
+   <label>会员姓名</label>
+   <input placeholder="请输入您的名字" placeholder-style="color:black"></input>
+  </view>
+
+    <view class="input two">
+   <label>生日信息</label>
+   <view>
+
+   <picker mode='date' value="date" bindchange="changeDate" >{{date}}
+   <text class="icon iconfont .iconsanjiaoxing1"></text>
+   </picker>
+   </view>
+  </view>
+  </form>
+<!-- 点击事件 -->
+  <view class="button">确定</view>

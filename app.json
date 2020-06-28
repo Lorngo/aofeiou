@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/Mine/Mine",
+    "pages/Lingqu/Lingqu",
+    "pages/Card/Card",
+    "pages/Geren/Geren",
+    "pages/List/List",
+    "pages/Mine2/Mine2",
+    "pages/Daogou/Daogou",
+    "pages/Shouchange/Shouchange",
+    "pages/Fenxiang/Fengxiang",
+    "pages/Fenxiao/Fenxiao",
+    "pages/Tixian/Tixian",
+    "pages/Yijian/Yijian",
+    "pages/Zuji/Zuji"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#008080"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

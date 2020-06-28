@@ -1,0 +1,45 @@
+<!--pages/Fenxiang/Fengxiang.wxml-->
+
+<view class="cont">
+     <image class="beijing" src="../../static/images/honbao.png"></image>
+     <image class="gold1" src="../../static/images/gold2.png"></image>
+     <image class="gold2" src="../../static/images/gold1.png"></image>
+     <image class="gold3" src="../../static/images/gold3.png"></image>
+     <view class="title">快来一起得积分</view>
+     <image class="title1" src="../../static/images/yaoqing2.png" ></image>
+     <view class="honbao1">
+      <image class="honbao" src="../../static/images/honbao2.png"></image>
+      <!-- 规则展示 -->
+     <view class="txt">规则介绍</view>
+     <!-- 分享按钮 -->
+     <view class="but">
+            <button open-type="share" hover-class="none">
+          <image src="../../static/images/fenxiang.png"></image>
+        </button>
+     </view>
+     </view>
+<!-- 邀请列表 -->
+     <view class="yaoqing">
+         <image class="smallhonbao" src="../../static/images/smallhonbao.png"></image>
+         <image class="yaoqing2" src="../../static/images/yaoqing.png"></image>
+         <view class="list">
+            <view class="line">
+                <view>昵称</view>
+                <view>获得积分</view>
+                <view>邀请时间</view>
+            </view>
+
+         <view class="bigBox">
+               <view class="box anmiate" style="transform:translateY({{top}}rpx)" >
+               <view class="line line2" wx:for="{{yqList}}" wx:key="*this">
+                <view>{{item.name}}</view>
+                <view class="num">{{item.jf}}</view>
+                <view>{{item.time}}</view>
+            </view>
+          </view>
+         </view>
+
+
+         </view>
+     </view>
+</view>

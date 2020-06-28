@@ -1,0 +1,144 @@
+<!--pages/Shouchange/Shouchange.wxml-->
+<!-- 头部选项卡 -->
+ <view class="head label flex-cen">
+      <view class="item " wx:for="{{label}}" wx:key="index" data-index="{{index}}" bindtap="selectLabel"><view class="text {{labelIndex == index ? 'change' : ''}}">{{item}}<view class="after {{labelIndex == index ? 'on' : ''}}"></view></view></view>
+    </view>
+
+
+<!-- 宝贝 -->
+<view class="baobei" wx:if="{{labelIndex == 0}}">
+	<view class="list">
+		<view class="left">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="txt">
+				<view class="title">方兜连袖短大衣</view>
+				<view class="size">规格：175 深灰色</view>
+				<view class="price">
+					<text class="icon">￥</text>
+					139</view>
+			</view>
+		</view>
+		<view class="right">
+			×1
+		</view>
+	</view>
+
+	<view class="list">
+		<view class="left">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="txt">
+				<view class="title">方兜连袖短大衣</view>
+				<view class="size">规格：175 深灰色</view>
+				<view class="price">
+					<text class="icon">￥</text>
+					139</view>
+			</view>
+		</view>
+		<view class="right">
+			×1
+		</view>
+	</view>
+
+	<view class="list">
+		<view class="left">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="txt">
+				<view class="title">方兜连袖短大衣</view>
+				<view class="size">规格：175 深灰色</view>
+				<view class="price">
+					<text class="icon">￥</text>
+					139</view>
+			</view>
+		</view>
+		<view class="right">
+			×1
+		</view>
+	</view>
+
+	<view class="list">
+		<view class="left">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="txt">
+				<view class="title">方兜连袖短大衣</view>
+				<view class="size">规格：175 深灰色</view>
+				<view class="price">
+					<text class="icon">￥</text>
+					139</view>
+			</view>
+		</view>
+		<view class="right">
+			×1
+		</view>
+	</view>
+
+	
+</view>
+
+<!-- 文章 -->
+<view class="wenzhang" wx:else>
+	<view class="box">
+		<view class="img">
+			<image src="../../static/images/shop1.png" mode="widthFix"></image>
+		</view>
+
+		<view class="txt">
+			方兜连袖短大衣
+		</view>
+	</view>
+
+	<view class="box">
+		<view class="img">
+			<image src="../../static/images/shop2.png" mode="widthFix"></image>
+		</view>
+
+		<view class="txt">
+			方兜连袖短大衣
+		</view>
+	</view>
+
+	<view class="box">
+		<view class="img">
+			<image src="../../static/images/shop3.png" mode="widthFix"></image>
+		</view>
+
+		<view class="txt">
+			方兜连袖短大衣
+		</view>
+	</view>
+	<view class="box">
+		<view class="img">
+			<image src="../../static/images/shop4.png" mode="widthFix"></image>
+		</view>
+
+		<view class="txt">
+			方兜连袖短大衣
+		</view>
+	</view>
+
+	<view class="box">
+		<view class="img">
+			<image src="../../static/images/shop4.png" mode="widthFix"></image>
+		</view>
+
+		<view class="txt">
+			方兜连袖短大衣
+		</view>
+	</view>
+	<view class="box">
+		<view class="img">
+			<image src="../../static/images/shop1.png" mode="widthFix"></image>
+		</view>
+
+		<view class="txt">
+			方兜连袖短大衣
+		</view>
+	</view>
+</view>

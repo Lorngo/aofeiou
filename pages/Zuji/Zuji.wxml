@@ -1,0 +1,117 @@
+<!--pages/Zuji/Zuji.wxml-->
+<view class="head">
+	<view class="box">
+		<view class="top">周日</view>
+		<view class="main">1</view>
+	</view>
+
+	<view class="box">
+		<view class="top">周一</view>
+		<view class="main">2</view>
+	</view>
+
+
+	<view class="box">
+		<view class="top">周二</view>
+		<view class="main">3</view>
+	</view>
+
+	<view class="box">
+		<view class="top">周三</view>
+		<view class="main">4</view>
+	</view>
+
+	<view class="box">
+		<view class="top">周四</view>
+		<view class="main">5</view>
+	</view>
+
+	<view class="box">
+		<view class="top">周五</view>
+		<view class="main">6</view>
+	</view>
+
+	<view class="box">
+		<view class="top">周六</view>
+		<view class="main">7</view>
+	</view>
+
+	<view class="icon">
+		<image src="../../static/images/icon3.png"></image>
+	</view>
+</view>
+
+
+<view class="cart">
+	<view class="top">
+		6月4日
+	</view>
+	<view class="shop">
+		<view class="box">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="price">
+				<text>￥</text>
+				<text>139</text>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="price">
+				<text>￥</text>
+				<text>139</text>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="price">
+				<text>￥</text>
+				<text>139</text>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="price">
+				<text>￥</text>
+				<text>139</text>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="price">
+				<text>￥</text>
+				<text>139</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="cart">
+	<view class="top">
+		6月3日
+	</view>
+	<view class="shop">
+		<view class="box">
+			<view class="img">
+				<image src="../../static/images/shop2.png" mode="widthFix"></image>
+			</view>
+			<view class="price">
+				<text>￥</text>
+				<text>139</text>
+			</view>
+		</view>
+	</view>
+</view>

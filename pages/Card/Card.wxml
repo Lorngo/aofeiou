@@ -1,0 +1,58 @@
+<!--pages/Card/Card.wxml-->
+<!-- 卡片 -->
+<view class="card">
+	<image src="../../static/images/card{{cardImg}}.png"></image>
+	<view class="box">
+		<view class="top {{cardImg == 1 ? 'top1' : ''}} {{cardImg == 2 ? 'top2' : ''}} {{cardImg == 3 ? 'top3' : ''}} {{cardImg == 4 ? 'top4' : ''}} {{cardImg == 5 ? 'top5' : ''}}">{{cardTitle}}</view>
+		<view class="num {{cardImg == 1 ? 'num1' : ''}} {{cardImg == 2 ? 'num2' : ''}} {{cardImg == 3 ? 'num3' : ''}} {{cardImg == 4 ? 'num4' : ''}} {{cardImg == 5 ? 'num5' : ''}}">
+		  622 8888 8888 8888
+		</view>
+	</view>
+
+  <view class="txt ">
+   <text class="num {{cardImg == 1 ? 'num1' : ''}} {{cardImg == 2 ? 'num2' : ''}} {{cardImg == 3 ? 'num3' : ''}} {{cardImg == 4 ? 'num4' : ''}} {{cardImg == 5 ? 'num5' : ''}}">已绑定会员卡 可同步线上线下积分</text>
+  </view>
+</view>
+
+<!-- 详情介绍 -->
+
+<view class="detail">
+   <view class="title">会员卡说明</view>
+   <view class="txt">①.注册礼包：注册会员即可获得礼包;</view>
+   <view class="txt">②.消费积分：按照实付金额积分，指定活动期间，更畅享双倍
+    积分；</view>
+   <view class="txt">③.积分商城：精美礼品等您兑换；</view>
+   <view class="txt">④.会员商品：指定活动期间，可获得会员专享商品的购买资格;</view>
+</view>
+<!-- 会员介绍 -->
+<view class="tab">
+   <view class="frist change">
+       <view>会员类型</view>
+       <view>达到类型</view>
+       <view>会员折扣</view>
+   </view>
+
+    <view class="frist">
+       <view>大众卡</view>
+       <view>免费领取</view>
+       <view>无</view>
+   </view>
+
+    <view class="frist">
+       <view>奥莱卡</view>
+       <view>任意消费后升级</view>
+       <view>折扣说明</view>
+   </view>
+
+    <view class="frist">
+       <view>限量卡</view>
+       <view>免费领取</view>
+       <view>无</view>
+   </view>
+
+   <view class="frist">
+       <view>金卡</view>
+       <view>任意消费后升级</view>
+       <view>折扣说明</view>
+   </view>
+</view>

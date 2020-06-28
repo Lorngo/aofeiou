@@ -1,0 +1,16 @@
+<!--pages/Yijian/Yijian.wxml-->
+<view class="txt">
+ <textarea placeholder="请输入你的宝贵意见" value="{{Txt}}" placeholder-style='font-size:28rpx;color:#999'  maxlength="300" bindinput="changeTxt"></textarea>
+ <view class="zishu">({{Txtlength}}/300)</view>
+</view>
+
+<view class="tel">
+    <view>联系方式</view>
+    <view>
+     <input placeholder="132 2562 8962" placeholder-style="text-align:right"></input>
+    </view>
+</view>
+
+<view class="tijiao" bindtap="tijiao">
+  提交
+</view>

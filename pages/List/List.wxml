@@ -1,0 +1,272 @@
+<!--pages/List/List.wxml-->
+<view class="head label flex-cen">
+	<view class="item " wx:for="{{label}}" wx:key="index" data-index="{{index}}" bindtap="selectLabel">
+		<view class="text {{labelIndex == index ? 'change' : ''}}">{{item}}
+			<view class="after {{labelIndex == index ? 'on' : ''}}"></view>
+		</view>
+	</view>
+</view>
+
+<swiper>
+   <swiper>
+   <view class="yaoqing" wx:if="{{labelIndex == 0}}">
+	<view class="list">
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr2.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					安徒生先生
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr1.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					Rocco
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr3.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					今天你好吗
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr4.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					喜你而欢
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr5.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					难遇
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+	</view>
+</view>
+
+   </swiper>
+</swiper>
+
+<view class="yaoqing" wx:if="{{labelIndex == 0}}">
+	<view class="list">
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr2.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					安徒生先生
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr1.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					Rocco
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr3.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					今天你好吗
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr4.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					喜你而欢
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr5.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					难遇
+				</view>
+			</view>
+			<view class="right">
+				于2020.01.01扫码加入
+			</view>
+		</view>
+
+	</view>
+</view>
+
+<view class="goumai" wx:else>
+	<view class="list2">
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr2.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					安徒生先生
+				</view>
+			</view>
+			<view class="right">
+				<view class="top">
+					<text>提成</text>
+					<text class="change">+20</text>
+				</view>
+
+				<view class="bottom">
+					购买1件商品共100元
+				</view>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr1.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					Rocco
+				</view>
+			</view>
+			<view class="right">
+				<view class="top">
+					<text>提成</text>
+					<text class="change">+20</text>
+				</view>
+
+				<view class="bottom">
+					购买1件商品共100元
+				</view>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr3.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					今天你好吗
+				</view>
+			</view>
+			<view class="right">
+				<view class="top">
+					<text>提成</text>
+					<text class="change">+20</text>
+				</view>
+
+				<view class="bottom">
+					购买1件商品共100元
+				</view>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr4.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					喜你而欢
+				</view>
+			</view>
+			<view class="right">
+				<view class="top">
+					<text>提成</text>
+					<text class="change">+20</text>
+				</view>
+
+				<view class="bottom">
+					购买1件商品共100元
+				</view>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="left">
+				<view class="avatr">
+					<image src="../../static/images/avatr5.png" mode="aspectFill"></image>
+				</view>
+				<view class="txt">
+					难遇
+				</view>
+			</view>
+			<view class="right">
+				<view class="top">
+					<text>提成</text>
+					<text class="change">+20</text>
+				</view>
+
+				<view class="bottom">
+					购买1件商品共100元
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

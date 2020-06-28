@@ -1,0 +1,162 @@
+<!--pages/Geren/Geren.wxml-->
+<!-- 头部栏 -->
+<view class="top">
+  <image src="../../static/images/beijing.png" class="beijing" ></image>
+  <view class="user">
+  <view class="left">
+     <view class="avatr">
+         <image src="../../static/images/avatr1.png" mode="widthFix"></image>
+     </view>
+
+     <view class="userinfo">
+         <view class="name">安徒生先生</view>
+         <view class="id">ID：125365</view>
+     </view>
+  </view>
+  <view class="right">
+     <image src="../../static/images/shenfen.png"></image>
+  </view>
+  </view>
+<!-- 总数据展示 -->
+  <view class="detail">
+      <view class="head">
+           <view class="left">
+            总数据展示
+           </view>
+
+           <view class="right">
+           查看数据明细
+           <text class="iconfont .iconxiangyou"></text>
+           </view>
+      </view>
+
+      <view class="bottom">
+        <view class="box">
+           <view class="top">共邀请人数(人)</view>
+           <view class="main">1000</view>
+        </view>
+
+         <view class="box">
+           <view class="top">提交总金额(元)</view>
+           <view class="main">4586.58</view>
+        </view>
+
+         <view class="box">
+           <view class="top">购买商品总数(件)</view>
+           <view class="main">1020</view>
+        </view>
+
+      </view>
+  </view>
+
+  <view class="title">
+   最近订单
+  </view>
+</view>
+<!-- 订单展示 -->
+<view class="list">
+   <view class="box">
+      <view class="left">
+          <view class="avatr">
+               <image src="../../static/images/avatr2.png" mode="aspectFill"></image>
+          </view>
+          <view class="txt">
+            安徒生先生
+          </view>
+      </view>
+      <view class="right">
+         <view class="top">
+           <text>提成</text>
+           <text class="change">+20</text>
+         </view>
+
+         <view class="bottom">
+          购买1件商品共100元
+         </view>
+      </view>
+   </view>
+
+     <view class="box">
+      <view class="left">
+          <view class="avatr">
+               <image src="../../static/images/avatr1.png" mode="aspectFill"></image>
+          </view>
+          <view class="txt">
+            Rocco
+          </view>
+      </view>
+      <view class="right">
+         <view class="top">
+           <text>提成</text>
+           <text class="change">+20</text>
+         </view>
+
+         <view class="bottom">
+          购买1件商品共100元
+         </view>
+      </view>
+   </view>
+
+     <view class="box">
+      <view class="left">
+          <view class="avatr">
+               <image src="../../static/images/avatr3.png" mode="aspectFill"></image>
+          </view>
+          <view class="txt">
+            今天你好吗
+          </view>
+      </view>
+      <view class="right">
+         <view class="top">
+           <text>提成</text>
+           <text class="change">+20</text>
+         </view>
+
+         <view class="bottom">
+          购买1件商品共100元
+         </view>
+      </view>
+   </view>
+
+     <view class="box">
+      <view class="left">
+          <view class="avatr">
+               <image src="../../static/images/avatr4.png" mode="aspectFill"></image>
+          </view>
+          <view class="txt">
+           喜你而欢
+          </view>
+      </view>
+      <view class="right">
+         <view class="top">
+           <text>提成</text>
+           <text class="change">+20</text>
+         </view>
+
+         <view class="bottom">
+          购买1件商品共100元
+         </view>
+      </view>
+   </view>
+
+     <view class="box">
+      <view class="left">
+          <view class="avatr">
+               <image src="../../static/images/avatr5.png" mode="aspectFill"></image>
+          </view>
+          <view class="txt">
+           难遇
+          </view>
+      </view>
+      <view class="right">
+         <view class="top">
+           <text>提成</text>
+           <text class="change">+20</text>
+         </view>
+
+         <view class="bottom">
+          购买1件商品共100元
+         </view>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,80 @@
+<!--pages/Fenxiao/Fenxiao.wxml-->
+<!-- 卡片 -->
+<view class="card">
+   <image class="card1" src="../../static/images/card.png"></image>
+   <view class="shuju">
+      <view class="left">
+      基本数据
+      </view>
+      <view class="right">
+      数据更新至2020.4.27
+      </view>
+   </view>
+   <!-- 提现按钮 -->
+   <view class="but">
+     <image class="tixian" src="../../static/images/tixian (1).png"></image>
+     </view>
+
+<!-- 卡片内容 -->
+   <view class="cart">
+        <view class="box">
+             <view class="top">总收益(元)</view>
+             <view class="main">68968.00</view>
+        </view>
+
+         <view class="box change">
+             <view class="top change">昨日收益(元)</view>
+             <view class="main change">4568.26</view>
+        </view>
+
+         <view class="box">
+             <view class="top">总浏览人数(人))</view>
+             <view class="main">54650</view>
+        </view>
+
+         <view class="box change">
+             <view class="top change">昨日浏览人数(人)</view>
+             <view class="main change">1000</view>
+        </view>
+
+        <view class="line1"></view>
+        <view class="line2"></view>
+   </view>
+
+  
+</view>
+
+ <view class="title">
+   获得分销排行
+   </view>
+
+   
+          <view class="list">
+             <view class="name">Rocco</view>
+             <view>消费500</view>
+             <view>获利<text>532.2</text></view>
+          </view>
+
+           <view class="list">
+             <view class="name">我叫安徒生</view>
+             <view>消费500</view>
+             <view>获利<text>532.2</text></view>
+          </view>
+
+           <view class="list">
+             <view class="name"> 喜你而欢</view>
+             <view>消费500</view>
+             <view>获利<text>532.2</text></view>
+          </view>
+
+           <view class="list">
+             <view class="name">欢快时光</view>
+             <view>消费500</view>
+             <view>获利<text>532.2</text></view>
+          </view>
+
+           <view class="list">
+             <view class="name">你好吗</view>
+             <view>消费500</view>
+             <view>获利<text>532.2</text></view>
+          </view>

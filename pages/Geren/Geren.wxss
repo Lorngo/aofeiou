@@ -1,0 +1,229 @@
+/* pages/Geren/Geren.wxss */
+
+page {
+  background-color: white;
+}
+
+.top {
+  position: relative;
+}
+
+.top .beijing {
+  width: 1190rpx;
+  margin-left: -320rpx;
+  height: 969rpx;
+  margin-top: -273rpx;
+  z-index: -1;
+}
+
+.user {
+  width: 750rpx;
+  height: 110rpx;
+  position: absolute;
+  top: 150rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user .left {
+  display: flex;
+}
+
+.user .left .avatr {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 32rpx;
+  border: 4rpx solid #D4D4D4;
+}
+
+.user .left .avatr image {
+  width: 100%;
+  height: 100%;
+}
+
+
+.user .userinfo {
+  margin-left: 20rpx;
+}
+
+.user .userinfo .name {
+  font-size: 30rpx;
+  margin-top: 15rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+}
+
+.user .userinfo .id {
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #cfcfcf;
+  margin-top: 15rpx;
+}
+
+.user .right {
+  width: 176rpx;
+  height: 86rpx;
+  margin-top: 15rpx;
+  margin-right: -10rpx;
+}
+
+.user .right image {
+  width: 100%;
+  height: 100%;
+}
+
+.top .detail {
+  width: 694rpx;
+  height: 280rpx;
+  margin-left: 28rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  position: absolute;
+  top: 330rpx;
+}
+
+.top .detail .head {
+  display: flex;
+  align-items: center;
+  width: 640rpx;
+  height: 110rpx;
+  margin-left: 27rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  justify-content: space-between;
+}
+
+.top .detail .head .left {
+  padding-left: 15rpx;
+  border-left: 6rpx solid #CE4033;
+  border-radius: 5rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #333333;
+}
+
+.top .detail .head .right {
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+}
+
+.top .detail .head .right .iconfont {
+  font-size: 26rpx;
+}
+
+.top .detail .bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+
+.top .detail .bottom .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top .detail .bottom .box .top {
+  text-align: center;
+  width: 100%;
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  color: #999999;
+}
+
+.top .detail .bottom .box .main {
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 38rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  color: #333333;
+}
+
+.top .title {
+  font-size: 30rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: left;
+  color: #383838;
+  margin-left: 28rpx;
+  position: absolute;
+  top: 654rpx;
+}
+
+.list .box {
+  width: 690rpx;
+  height: 68rpx;
+  margin-left: 38rpx;
+  margin-top: 38rpx;
+  padding-bottom: 38rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.list .box .left {
+  display: flex;
+  align-items: center;
+}
+
+.list .box .avatr {
+  width: 68rpx;
+  height: 68rpx;
+}
+
+.list .box .left image {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 50%;
+}
+
+.list .box .txt {
+  margin-left: 23rpx;
+  font-size: 28rpx;
+  width: 250rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 400;
+  color: #333333;
+}
+
+.list .box .right{
+  width: 226rpx;
+  height: 84rpx;
+}
+
+.list .box .right .top{
+  width: 100%;
+  text-align: right;
+  font-size: 30rpx;
+font-family: PingFang SC, PingFang SC-Regular;
+font-weight: 400;
+color: #333333;
+}
+
+.list .box .right .top .change{
+  color: #CE4033;
+}
+
+.list .box .right .bottom{
+  font-size: 24rpx;
+font-family: PingFang SC, PingFang SC-Regular;
+font-weight: 400;
+text-align: left;
+color: #999999;
+margin-top: 5rpx;
+}
