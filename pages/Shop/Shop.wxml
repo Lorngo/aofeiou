@@ -1,0 +1,85 @@
+<view>
+	<view class="order full flex-col">
+		<!-- label栏 -->
+		<view class="label flex-cen">
+			<view class="item " wx:for="{{label}}" wx:key="index" data-index="{{index}}" bindtap="selectLabel">
+				<view class="text {{labelIndex == index ? 'change1' : ''}}">{{item}}
+					<view class="after {{labelIndex == index ? 'on' : ''}}"></view>
+				</view>
+			</view>
+		</view>
+		<!-- 列表栏 -->
+		<view class="flex1 ordere-list">
+			<swiper indicator-dots="{{indicatorDots}}" current="{{labelIndex}}" duration="{{300}}" bindchange="bindchangeSwiper">
+				<block wx:for="{{label.length}}" wx:key="*this">
+					<swiper-item>
+						<scroll-view scroll-y data-index="{{index}}" bindscrolltolower="bindscrolltolower">
+							<view class="ul wrap">
+								<view class="li {{labelIndex == 2 || labelIndex == 3 ? 'change2' : ''}}" wx:for="{{index == 0 ? unpaidList : (index == 1 ? unpaidList : (index == 2 ? deliverGoodsList : receiptGoodsList))}}" wx:key="id">
+
+									<view class="goods" wx:if='{{item.type == 1}}'>
+										<view class="item flex" wx:for="{{item.orders}}" wx:for-item="item2" wx:for-index="index2" wx:key="id">
+											<view class="img">
+												<image mode="aspectFill" src="{{item2.img}}"></image>
+											</view>
+											<view class="flex-col flex1">
+												<view>
+													<view class="h3 ell1">{{item2.name}}</view>
+
+												</view>
+											</view>
+										</view>
+									</view>
+
+									<view class="shops" wx:elif="{{item.type == 2}}">
+										<view class="shopsBox" wx:for="{{item.orders}}">
+											<view class="img2">
+												<image src="{{item.img}}" mode="aspectFill"></image>
+											</view>
+											<view class="txt">
+												{{ item.name }}
+											</view>
+										</view>
+									</view>
+
+									<view class="about" wx:elif="{{item.type == 3}}">
+										<view class="head">
+											<text class="word">L’ORFEO</text>
+											<text class="txt">奥菲欧</text>
+										</view>
+
+										<view class="topTxt">
+											目前，奥菲欧并不一味追求传统面料工艺或是科技面料工艺，而
+											是在不断理解和剖析时尚的基础上，寻找传统自然与现代生产技
+											术的结合点。并不一味追求传统面料工艺或是科技面料工艺，而
+											是在不断理解和剖析时尚的基础上，寻找传统自然与现代生产技
+											术的结合点。
+										</view>
+
+										<view class="img3">
+											<image src="../../static/images/aboutus.png" mode="aspectFill"></image>
+										</view>
+
+										<view class="buttonTxt">
+											目前，奥菲欧并不一味追求传统面料工艺或是科技面料工艺，而
+											是在不断理解和剖析时尚的基础上，寻找传统自然与现代生产技
+											术的结合点。并不一味追求传统面料工艺或是科技面料工艺，而
+											是在不断理解和剖析时尚的基础上，寻找传统自然与现代生产技
+											术的结合点。
+										</view>
+									</view>
+
+								</view>
+							</view>
+							<load-more loadMoreType="{{((index == 0 && orderList.length == 0) || (index == 1 && unpaidList.length == 0) || (index == 2 && deliverGoodsList.length == 0) || (index == 3 && receiptGoodsList.length == 0)) ? 0 : 2}}" iconfont="{{['icon-xiaoxihezi-kong', '250rpx', '#165D4C']}}" textList="{{['暂无数据~', '拼命加载中...', '我是有底线的啦~']}}"></load-more>
+						</scroll-view>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+
+
+
+
+	</view>
+</view>

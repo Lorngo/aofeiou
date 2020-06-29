@@ -1,24 +1,25 @@
-/* pages/Shouchange/Shouchange.wxss */
-
-.head {
-  width: 750rpx;
-  height: 80rpx;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
+page {
+  font-family: 'pangmenzhengdao';
 }
 
 .label {
   background-color: #fff;
-  box-shadow: 0 0 10rpx 0 #ddd;
   position: relative;
+  border-bottom: 1rpx solid#EFEFEF;
   z-index: 5;
+  display: flex;
+
 }
 
 .label .item {
   flex: 1;
-  text-align: center;
   padding-top: 19rpx;
+  padding-bottom: 17rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  color: #999999;
 }
 
 swiper,
@@ -36,88 +37,73 @@ scroll-view {
 .label .item .text .after {
   display: block;
   width: 0;
-  height: 5rpx;
+  height: 6rpx;
   border-radius: 6rpx;
-  background-color: #c63220;
+  background-color: #C63220;
   position: absolute;
   left: 50%;
-  top: 115%;
+  top: 120%;
   transition: all .3s;
 }
-
-.head .change{
-  color: #c63220 !important;
-}
-
-
-
 
 .label .item .text .after.on {
   width: 100%;
   left: 0;
 }
 
-.head view {
-  width: 60rpx;
-  height: 42rpx;
-  font-size: 30rpx;
-  font-family: PingFang SC, PingFang SC-Bold;
-  font-weight: 700;
-  text-align: left;
-  color: #999;
+.change1 {
+  color: #C63220 !important;
 }
 
+.ordere-list .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-
-.list {
+.ordere-list .li {
+  background: #fff;
   width: 694rpx;
   height: 234rpx;
-  margin-left: 28rpx;
-  background-color: white;
   margin-top: 29rpx;
-  border-radius: 15rpx;
+ display: flex;
+flex-wrap: wrap;
+border-radius: 15rpx;
+padding-left: 24rpx;
+align-items: center;
+}
+
+
+
+.full {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
-.list view {
-  overflow: hidden;
-}
 
-.list .left {
-  margin-left: 24rpx;
-  display: flex;
-}
-
-.list .left .img {
-  height: 174rpx;
-}
-
-.list .left image {
+.ordere-list .li .img {
   width: 174rpx;
   height: 174rpx;
-}
-
-.list .left .txt {
-  width: 220rpx;
-  height: 174rpx;
-  margin-left: 24rpx;
-}
-
-.list .left .title {
-  font-size: 28rpx;
-  font-family: PingFang SC, PingFang SC-Regular;
-  font-weight: 400;
-  text-align: left;
-  color: #333333;
-  margin-top: 10rpx;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  margin-right: 24rpx;
 }
 
-.list .left .size {
+.ordere-list .li image {
+  width: 100%;
+  height: 100%;
+}
+
+.ordere-list .li .h3 {
+  color: #222;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333333;
+}
+
+.li .goods .size{
   font-size: 24rpx;
   font-family: PingFang SC, PingFang SC-Regular;
   font-weight: 400;
@@ -126,67 +112,172 @@ scroll-view {
   margin-top: 14rpx;
 }
 
-.list .left .price {
+.li .goods .size text{
+  margin-left: 10rpx;
+}
+
+.li .goods .price{
+  margin-top: 30rpx;
+  color: #C63220;
+  opacity: 0.82;
+font-size: 24rpx;
+font-family: PingFang SC, PingFang SC-Regular;
+font-weight: 400;
+color: #c63220;
+line-height: 33rpx;
+}
+
+.li .goods .price text{
   font-size: 30rpx;
-  font-family: PingFang SC, PingFang SC-Regular;
-  font-weight: 400;
-  text-align: left;
-  margin-top: 20rpx;
-  color: #c63220;
-  line-height: 33px;
 }
 
-.list .left .price .icon {
-  font-size: 24rpx;
-  font-size: Regular;
-}
-
-.list .right {
-  font-size: 24rpx;
-  font-family: PingFang SC, PingFang SC-Regular;
-  font-weight: 400;
-  text-align: left;
-  color: #999999;
-  margin-right: 24rpx;
-}
-
-.wenzhang {
+.order .flex1 {
+  flex: 1;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 29rpx;
+  box-sizing: border-box;
 }
 
-.wenzhang .box {
-  width: 332rpx;
-  height: 432rpx;
-}
 
-.wenzhang .box .img {
-  width: 332rpx;
-  height: 332rpx;
-  overflow: hidden;
-}
 
-.wenzhang .box .img image {
+
+.order 
+
+swiper,
+scroll-view {
   width: 100%;
   height: 100%;
 }
 
 
-.wenzhang .box .txt {
-  font-size: 28rpx;
-  font-family: PingFang SC, PingFang SC-Regular;
-  font-weight: 400;
-  text-align: left;
-  color: #333333;
-  height: 100rpx;
-  line-height: 100rpx;
-  text-indent: 1rem;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.ordere-list .li .p {
+  font-size: 30rpx;
+  color: #999;
+  text-align: right;
+}
+
+.subtotal {
+  text-align: right;
+  font-size: 30rpx;
+  color: #666;
+  padding: 20rpx 0;
+}
+
+.subtotal .h6 {
+  padding-right: 40rpx;
+}
+
+.subtotal text .prize-total {
+  color: #F0452D;
+}
+
+.btns {
+  padding: 30rpx 0 40rpx;
+  text-align: right;
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+}
+
+.btns button {
+  font-size: 30rpx;
+  color: #999;
+  width: 170rpx;
+  border: 1px solid #707070;
+  border-radius: 60rpx;
+  height: 60rpx;
 }
 
 
+
+.btns button:not(:last-child) {
+  margin-right: 40rpx;
+}
+
+.li .shops {
+  width: 694rpx;
+  height: 450rpx;
+}
+
+.ul .change2 {
+  width: 332rpx;
+  padding-left: 0rpx;
+  height: 398rpx;
+  background-color: #F6F7F7;
+}
+
+
+
+.li .shops .img2 {
+  width: 100%;
+  height: 332rpx;
+}
+
+.li .shops .txt {
+  text-indent: 0.8rem;
+  margin-top: 22rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333333;
+}
+
+.about {
+  width: 685rpx;
+  height: 100%;
+}
+
+
+.about .head {
+  width: 100%;
+  height: 51rpx;
+  text-align: center;
+  margin-bottom: 24rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #000000;
+}
+
+.about .topTxt,
+.buttonTxt {
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  color: #666666;
+  line-height: 36rpx;
+  letter-spacing: 0rpx;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+
+.about .img3{
+  width: 694rpx;
+  height: 390rpx;
+}
+
+.about .img3 image{
+  width: 100%;
+  height: 100%;
+}
+
+.flex{
+  flex-wrap: wrap !important;
+}
+
+.ul .goods{
+  width: 100%;
+}
+
+.ul{
+  width: 694rpx !important;
+}
+
+
+
+.ul .goods .right{
+  line-height: 174rpx;
+  margin-right: 24rpx;
+  font-size: 24rpx;
+font-family: PingFang SC, PingFang SC-Regular;
+font-weight: 400;
+text-align: left;
+color: #999999;
+}

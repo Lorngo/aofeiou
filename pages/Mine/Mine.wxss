@@ -167,7 +167,6 @@
 
 .list {
   width: 694rpx;
-  height: 896rpx;
   margin-left: 28rpx;
   margin-top: 28rpx;
   display: flex;
@@ -306,4 +305,16 @@ line-height: 33rpx;
 
 .footer .shop .price .icon{
   font-size: 24rpx;
+}
+
+.footer .loadmore{
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
+
+.footer .footerText{
+   font-size: 28rpx;
+   text-align: center;
+   color: #999;
+  
 }

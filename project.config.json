@@ -170,6 +170,33 @@
 					"pathName": "pages/Zuji/Zuji",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Shop/Shop",
+					"pathName": "pages/Shop/Shop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Cart/Cart",
+					"pathName": "pages/Cart/Cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Express/Express",
+					"pathName": "pages/Express/Express",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Address/Address",
+					"pathName": "pages/Address/Address",
+					"scene": null
 				}
 			]
 		}

@@ -1,0 +1,5 @@
+/* components/load-more/load-more.wxss */
+.p{
+  text-align: center;
+}
+

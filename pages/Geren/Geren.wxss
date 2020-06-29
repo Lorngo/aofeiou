@@ -1,7 +1,7 @@
 /* pages/Geren/Geren.wxss */
 
 page {
-  background-color: white;
+  background-color: #F6F7F7;
 }
 
 .top {
@@ -162,7 +162,17 @@ page {
   top: 654rpx;
 }
 
+.list{
+   background-color: white;
+   padding-top: 30rpx;
+}
+
+.list .box:nth-child(1){
+  margin-top: 0rpx;
+}
+
 .list .box {
+  
   width: 690rpx;
   height: 68rpx;
   margin-left: 38rpx;
@@ -226,4 +236,16 @@ font-weight: 400;
 text-align: left;
 color: #999999;
 margin-top: 5rpx;
+}
+
+ .loadmore{
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
+
+ .footerText{
+   font-size: 28rpx;
+   text-align: center;
+   color: #999;
+  
 }

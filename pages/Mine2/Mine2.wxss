@@ -375,3 +375,15 @@ color: #f6dfae;
 .footer .shop .price .icon {
   font-size: 24rpx;
 }
+
+.footer .loadmore{
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
+
+.footer .footerText{
+   font-size: 28rpx;
+   text-align: center;
+   color: #999;
+  
+}

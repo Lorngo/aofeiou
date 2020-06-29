@@ -7,7 +7,7 @@
 		<view class="user">
 		 <view class="left">
        <view class="img">
-			  	<image src="../../static/images/user.png" mode='widthFix'></image>
+			  	<image src="../../static/images/user.png" mode='aspectFill'></image>
 			 </view>
 
 			<view class="txt">
@@ -124,7 +124,7 @@
 		<view class="right iconfont .iconxiangyou"></view>
 	</view>
 
-	<view class="box">
+	<!-- <view class="box">
 		<view class="left">
 			<view class="img iconfont fenxiaoyuan.iconfenxiaoyuan"></view>
 			<view class="txt">申请成为分销员</view>
@@ -138,7 +138,7 @@
 			<view class="txt">查看我的分销</view>
 		</view>
 		<view class="right iconfont .iconxiangyou"></view>
-	</view>
+	</view> -->
 
 	<view class="box">
 		<view class="left">
@@ -185,57 +185,25 @@
 	</view>
 
 	<view class="shop">
-		<view class="box">
+		<view class="box" wx:for="{{shopList}}" wx:key="id">
 		 <view class="img">
-     	<image src="../../static/images/shop1.png" mode="widthFix"></image>
+     	<image src="{{item.imgUrl}}" mode="aspectFill"></image>
      </view>
 			<view class="title">
-				方兜连袖短大衣
+				{{item.shopName}}
 			</view>
 			<view class="price">
 				<text class="icon">¥</text>
-				<text>139</text>
+				<text>{{item.price }}</text>
 			</view>
 		</view>
 
-    <view class="box">
-		  <view class="img">
-      	<image src="../../static/images/shop1.png" mode="widthFix"></image>
-      </view>
-			<view class="title">
-				茧型大翻领中长大衣
-			</view>
-			<view class="price">
-				<text class="icon">¥</text>
-				<text>189</text>
-			</view>
+ <view class="loadmore">
+		<view class="footerText">
+		    我是有底线的啦~
+	 	</view>
 		</view>
 
-    <view class="box">
-		  <view class="img">
-      	<image src="../../static/images/shop3.png" mode="widthFix"></image>
-      </view>
-			<view class="title">
-				方兜连袖短大衣
-			</view>
-			<view class="price">
-				<text class="icon">¥</text>
-				<text>139</text>
-			</view>
-		</view>
-
-    <view class="box">
-		  <view class="img">
-      	<image src="../../static/images/shop4.png" mode="widthFix"></image>
-      </view>
-			<view class="title">
-			茧型大翻领中长大衣
-			</view>
-			<view class="price">
-				<text class="icon">¥</text>
-				<text>189</text>
-			</view>
-		</view>
 	</view>
 
 

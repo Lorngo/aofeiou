@@ -12,7 +12,12 @@
     "pages/Fenxiao/Fenxiao",
     "pages/Tixian/Tixian",
     "pages/Yijian/Yijian",
-    "pages/Zuji/Zuji"
+    "pages/Zuji/Zuji",
+    "pages/Shop/Shop",
+    "pages/Cart/Cart",
+    "pages/Express/Express",
+    "pages/Address/Address"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

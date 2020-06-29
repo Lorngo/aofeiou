@@ -5,7 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    shopList:[{
+      id : 10001,
+      imgUrl : '../../static/images/shop1.png',
+      shopName : '方兜连袖短大衣',
+      price : "139"
+    },
+    {
+      id : 10002,
+      imgUrl : '../../static/images/shop3.png',
+      shopName : '茧型大翻领中长大衣',
+      price : "139"
+    },
+    {
+      id : 10003,
+      imgUrl : '../../static/images/shop4.png',
+      shopName : '方兜连袖短大衣',
+      price : "139"
+    },
+    {
+      id : 10004,
+      imgUrl : '../../static/images/shop1.png',
+      shopName : '茧型大翻领中长大衣',
+      price : "139"
+    }]//猜你喜欢列表
   },
 
   /**

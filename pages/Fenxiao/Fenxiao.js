@@ -5,6 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
+    List: [{
+      name : 'Rocco',
+      price : 500,
+      num   : 532.2
+    },
+    {
+      name : '我叫安徒生',
+      price : 500,
+      num   : 532.2
+    },
+    {
+      name : '喜你而欢',
+      price : 500,
+      num   : 532.2
+    },
+    {
+      name : '欢快时光',
+      price : 500,
+      num   : 532.2
+    },
+    {
+      name : '你好吗',
+      price : 500,
+      num   : 532.2
+    }]//分销排行
   },
 
   /**

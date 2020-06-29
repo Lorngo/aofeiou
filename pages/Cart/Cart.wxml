@@ -1,0 +1,98 @@
+<!--subpackages/shop/cart/cart.wxml-->
+<view class="body">
+  <!-- 购物车列表部分 -->
+  <view class="goods wrap">
+    <view class="ul">
+      <view class="li {{item.isSelect ? 'on' : ''}} {{item.isTouchMove ? 'ons' : ''}}" wx:for="{{goodsList}}" wx:key="id" data-index="{{index}}" bindtap="jump" >
+        <view class="flex-cen" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove">
+          <view class="icon"><text class="iconfont icon-gouxuan"></text></view>
+          <view class="selects" data-index="{{index}}" catchtap="selectSingle"></view>
+          <view class="img">
+            <image src="{{item.img}}" mode="aspectFill"></image>
+          </view>
+          <view class="text flex1">
+            <view class="top">
+              <view class="h2 ell1">{{item.name}}</view>
+              <view class="h3">规格: <text class="size">{{item.size}}</text> <text class="color">{{item.color}}</text> </view>
+            </view>
+            <view class="bottom flex-bet">
+              <view class="price">￥{{item.price}}</view>
+              <view class="num flex">
+                <button class="left" hover-class="hover-class" data-type="0" data-index="{{index}}" catchtap="numChange">-</button>
+                <view>{{item.num}}</view>
+                <button class="right" hover-class="hover-class" data-type="1" data-index="{{index}}" catchtap="numChange">+</button>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="del flex-cen" data-index="{{index}}" catchtap="del">删除</view>
+      </view>
+    </view>
+    <load-more loadMoreType="{{goodsList.length == 0 ? 0 : 2}}" iconfont="icon-xiaoxihezi-kong" iconfont="{{['icon-xiaoxihezi-kong', '250rpx', '#165D4C']}}" textList="{{['您的购物车清空啦~', '拼命加载中...', '我是有底线的啦~']}}"></load-more>
+  </view>
+  <!-- 全选、结算部分 -->
+  <view class="count flex-bet {{goodsList.length != 0 ? 'on' : ''}}">
+    <view class="flex-cen">
+      <view class="flex-cen allSelect {{isSelectAll ? 'on' : ''}}" bindtap="selectAll">
+        <view class="icon"><text class="iconfont icon-gouxuan"></text></view>
+        <view class="btn">全选</view>
+      </view>
+      <view class="delete" bindtap="delete" hidden="{{!isSelectGoods}}">删除</view>
+    </view>
+    <view class="flex-cen right">
+      <view class="prices" >合计：<text>￥{{prizeTotal || '0.00'}}</text></view>
+      <view class="but" bindtap="settlement">去结算</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="detail" wx:if="{{ tag == true }}">
+    <view class="box">
+        <view class="top">
+          <view class="left" >
+               <image  src="../../static/images/shop2.png" mode="aspectFill"></image>
+          </view>
+
+          <view class="main">
+             <view class="title">方兜连袖短大衣</view>
+             <view class="kucun">库存500件</view>
+             <view class="price"><text>￥</text> <text class="num">139</text></view>
+          </view>
+
+          <view class="right" bindtap="fanhui">
+             <image src="../../static/images/tuichu.png" mode="aspectFill"></image>
+          </view>
+        </view>
+
+        <view class="cont">
+           <view class="title">规格</view>
+           <view class="opt">
+              <view wx:for="{{size}}" wx:key='*this' class="{{ sizeIndex == index ? 'change' : '' }}"  data-index="{{index}}" bindtap="sizeIndex">{{item}}</view>
+              
+           </view>
+        </view>
+
+         <view class="cont">
+           <view class="title">颜色</view>
+           <view class="opt">
+              <view wx:for="{{color}}" wx:key='*this'class="{{ colorIndex == index ? 'change' : '' }}"  data-index="{{index}}" bindtap="colorIndex" >{{item}}</view>
+             
+           </view>
+        </view>
+
+        <view class="cont">
+           <view class="title">规格</view>
+           <view class="pick">
+               <view>
+                  <picker>到店试衣</picker>
+               </view>
+           </view>
+        </view>
+
+    <view class="but">
+       下一步
+    </view>
+
+    </view>
+</view>

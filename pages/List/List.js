@@ -1,37 +1,54 @@
 
 Page({
   data: {
-    label: ["全部", "待付款", "待发货", "待收货"],//标签列表
+    label: ["邀请人员", "购买列表"],//标签列表
     labelIndex: 0,//标签索引
-    orderList: [//订单列表
-      { id: 1, type: 1, orders: [{ id: 1, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "68.50", num: 1}, { id: 2, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "128.00", num: 2}] },
-      { id: 2, type: 2, orders: [{ id: 1, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "68.50", num: 1}, { id: 2, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "128.00", num: 2}] },
-      { id: 3, type: 3, orders: [{ id: 1, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "68.50", num: 1}, { id: 2, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "128.00", num: 2}] },
-      { id: 4, type: 4, orders: [{ id: 1, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "68.50", num: 1}, { id: 2, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "128.00", num: 2}] },
-      { id: 5, type: 5, orders: [{ id: 1, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "68.50", num: 1}, { id: 2, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "128.00", num: 2}] },
-      { id: 6, type: 6, orders: [{ id: 1, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "68.50", num: 1}, { id: 2, img: 'https://game.flyh5.cn/resources/game/wechat/szq/images/good_02.jpg', name: '焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜焕活骨胶原面膜', other: "310ml", prize: "128.00", num: 2}] }
-    ]
+    yaoList: [{ id: 1, img: '../../static/images/avatr2.png', name: '安徒生先生', time: "2020.01.01"},{ id: 2, img: '../../static/images/avatr1.png', name: 'Rocco', time: "2020.01.01"},{ id: 3, img: '../../static/images/avatr3.png', name: '今天你好吗', time: "2020.01.01"},{ id: 4, img: '../../static/images/avatr4.png', name: '喜你而欢', time: "2020.01.01"},{ id: 5, img: '../../static/images/avatr5.png', name: '难遇', time: "2020.01.01"}],
+    gouList:[{
+      avatUrl : '../../static/images/avatr2.png',
+      name : '安徒生先生',
+      price : 20,
+      num   : 1,
+      heji  : 100
+    },
+    {
+      avatUrl : '../../static/images/avatr1.png',
+      name : 'Rocco',
+      price : 20,
+      num   : 1,
+      heji  : 100
+    },
+    {
+      avatUrl : '../../static/images/avatr3.png',
+      name : '今天你好吗',
+      price : 20,
+      num   : 1,
+      heji  : 100
+    },
+    {
+      avatUrl : '../../static/images/avatr4.png',
+      name : '喜你而欢',
+      price : 20,
+      num   : 1,
+      heji  : 100
+    },
+    {
+      avatUrl : '../../static/images/avatr5.png',
+      name : '难遇',
+      price : 20,
+      num   : 1,
+      heji  : 100
+    }
+  ]//购买列表
   },
+   
   onLoad() {
     initComputed(this)//初始化计算属性
     this.orderCalc()
   },
-  //计算属性
-  computed: {
-    /*待付款列表*/
-    unpaidList() {
-      return this.data.orderList.filter(item => { return item.type == 1 })
-    },
-    /*待发货列表*/
-    deliverGoodsList() {
-      return this.data.orderList.filter(item => { return item.type == 2 })
-    },
-    /*待收货列表*/
-    receiptGoodsList() {
-      return this.data.orderList.filter(item => { return item.type == 3 })
-    }
-  },
-  //点击操作订单按钮
+  
+ 
+ 
   operation(e) {
     let { index, type } = e.currentTarget.dataset
     switch(type) {

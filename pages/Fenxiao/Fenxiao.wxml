@@ -1,80 +1,62 @@
 <!--pages/Fenxiao/Fenxiao.wxml-->
 <!-- 卡片 -->
 <view class="card">
-   <image class="card1" src="../../static/images/card.png"></image>
-   <view class="shuju">
-      <view class="left">
-      基本数据
-      </view>
-      <view class="right">
-      数据更新至2020.4.27
-      </view>
-   </view>
-   <!-- 提现按钮 -->
-   <view class="but">
-     <image class="tixian" src="../../static/images/tixian (1).png"></image>
-     </view>
+	<image class="card1" src="../../static/images/card.png"></image>
+	<view class="shuju">
+		<view class="left">
+			基本数据
+		</view>
+		<view class="right">
+			数据更新至2020.4.27
+		</view>
+	</view>
+	<!-- 提现按钮 -->
+	<view class="but">
+		<image class="tixian" src="../../static/images/tixian (1).png"></image>
+	</view>
 
-<!-- 卡片内容 -->
-   <view class="cart">
-        <view class="box">
-             <view class="top">总收益(元)</view>
-             <view class="main">68968.00</view>
-        </view>
+	<!-- 卡片内容 -->
+	<view class="cart">
+		<view class="box">
+			<view class="top">总收益(元)</view>
+			<view class="main">68968.00</view>
+		</view>
 
-         <view class="box change">
-             <view class="top change">昨日收益(元)</view>
-             <view class="main change">4568.26</view>
-        </view>
+		<view class="box change">
+			<view class="top change">昨日收益(元)</view>
+			<view class="main change">4568.26</view>
+		</view>
 
-         <view class="box">
-             <view class="top">总浏览人数(人))</view>
-             <view class="main">54650</view>
-        </view>
+		<view class="box">
+			<view class="top">总浏览人数(人))</view>
+			<view class="main">54650</view>
+		</view>
 
-         <view class="box change">
-             <view class="top change">昨日浏览人数(人)</view>
-             <view class="main change">1000</view>
-        </view>
+		<view class="box change">
+			<view class="top change">昨日浏览人数(人)</view>
+			<view class="main change">1000</view>
+		</view>
 
-        <view class="line1"></view>
-        <view class="line2"></view>
-   </view>
+		<view class="line1"></view>
+		<view class="line2"></view>
+	</view>
 
-  
+
 </view>
 
- <view class="title">
-   获得分销排行
-   </view>
+<view class="title">
+	获得分销排行
+</view>
 
-   
-          <view class="list">
-             <view class="name">Rocco</view>
-             <view>消费500</view>
-             <view>获利<text>532.2</text></view>
-          </view>
 
-           <view class="list">
-             <view class="name">我叫安徒生</view>
-             <view>消费500</view>
-             <view>获利<text>532.2</text></view>
-          </view>
+<scroll-view>
+	<view class="list" wx:for="{{List}}" wx:key="*this">
+		<view class="name">{{item.name}}</view>
+		<view>消费{{item.price}}</view>
+		<view>获利<text>{{item.num}}</text></view>
+	</view>
 
-           <view class="list">
-             <view class="name"> 喜你而欢</view>
-             <view>消费500</view>
-             <view>获利<text>532.2</text></view>
-          </view>
 
-           <view class="list">
-             <view class="name">欢快时光</view>
-             <view>消费500</view>
-             <view>获利<text>532.2</text></view>
-          </view>
+		<load-more loadMoreType="{{ list.length == 0 ? 0 : 2}}" iconfont="{{['icon-xiaoxihezi-kong', '250rpx', '#165D4C']}}" textList="{{['暂无数据~', '拼命加载中...', '我是有底线的啦~']}}"></load-more>
 
-           <view class="list">
-             <view class="name">你好吗</view>
-             <view>消费500</view>
-             <view>获利<text>532.2</text></view>
-          </view>
+</scroll-view>

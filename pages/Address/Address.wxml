@@ -1,0 +1,61 @@
+<!--pages/Address/Address.wxml-->
+<view class="head">
+   <view class="shop">
+      <view class="left">
+          <image src="../../static/images/shop2.png" mode="aspectFill"></image>
+      </view>
+      <view class="right">
+        <view class="title">方兜连袖短大衣</view>
+        <view class="size"> 规格:<text class="size">175</text> <text class="color">蓝色</text> </view>
+        <view class="kucun">库存<text>500</text>件 </view>
+        <view class="price">￥ <text>139</text></view>
+      
+      </view>
+   </view>
+ 
+</view>
+
+<view class="main">
+   <view class="top">
+     距离您最近的店铺
+   </view>
+    
+    <view class="shop1">
+       <view class="left">奥特莱斯店铺</view>
+       <view class="right">
+         <picker>ORFEO奥菲欧天虹店</picker>
+       </view>
+    </view>
+
+    <view class="top">
+     选择您预约的时间
+   </view>
+      <view class="picke">
+       <view>
+           <picker >月
+           </picker>       
+       </view>
+
+       <view>
+          <picker mode='date' fields='day'>日</picker>  
+       </view>
+
+       <view>
+           <picker>段</picker>
+       </view>
+        
+        
+      </view>
+
+  <view class="top">
+     您的电话是
+   </view>
+
+   <view class="inp">
+   <input placeholder="132 2635 3698"></input>
+   </view>
+</view>
+
+<view class="but">
+   确定
+</view>

@@ -45,11 +45,11 @@
 <view wx:if='{{tag == true}}' class="zhezhao">
    <view class="box">
       <view class="img">
-       <image src="../../static/images/icon2.png" mode="widthFix"></image>
+       <image src="../../static/images/icon2.png" mode="aspectFill"></image>
       </view>
 
       <view class="fanhui" bindtap="close">
-        <image src="../../static/images/tuichu.png" mode="widthFix"></image>
+        <image src="../../static/images/tuichu.png" mode="aspectFill"></image>
       </view>
 
       <view class="access">

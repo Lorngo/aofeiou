@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "官方商城",
+  "usingComponents": {
+    "load-more": "/components/load-more/load-more"
+
+  }
+}

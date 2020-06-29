@@ -160,3 +160,15 @@ page {
 .list text{
   color: black;
 }
+
+.loadmore{
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
+
+.footerText{
+   font-size: 28rpx;
+   text-align: center;
+   color: #999;
+  
+}

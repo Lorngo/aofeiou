@@ -1,0 +1,31 @@
+<!--pages/Express/Express.wxml-->
+<view class="news">
+   <view class="li">
+      <view class="left">收货人</view>
+      <view class="right">安徒生</view>
+   </view>
+
+    <view class="li">
+      <view class="left">手机号</view>
+      <view class="right">135 2365 3686</view>
+   </view>
+
+    <view class="li">
+      <view class="left">所在地区</view>
+      <view class="right">湖南省 长沙市 开福区</view>
+   </view>
+
+    <view class="li">
+      <view class="left">详细地址</view>
+      <view class="right">万达广场写字楼20楼</view>
+   </view>
+
+    <view class="li last">
+      <view class="left">设为默认地址</view>
+      <view class="right"> <switch checked="true" color="#C63220"></switch> </view>
+   </view>
+</view>
+
+<view class="default">选择默认地址</view>
+
+<view class="but">下一步</view>
